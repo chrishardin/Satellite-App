@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 
@@ -16,8 +17,8 @@ class _LoginScreenState extends State<LoginScreen> {
     final form = _formKey.currentState;
     if (form != null && form.validate()) {
       form.save();
-      print('Email: $_email, Password: $_password');
-      print('TODO: Perform the FirebAse email sign in here');
+      log('Email: $_email, Password: $_password');
+      log('TODO: Sign in with email and password');
     }
   }
 
@@ -61,14 +62,14 @@ class _LoginScreenState extends State<LoginScreen> {
                 Buttons.Google,
                 text: "Sign in with Google",
                 onPressed: () {
-                  print("TODO: Sign in with Google");
+                  log('TODO: Sign in with Google');
                 },
               ),
               SignInButton(
                 Buttons.Facebook,
                 text: "Sign in with Facebook",
                 onPressed: () {
-                  print("TODO: Sign in with Facebook");
+                  log('TODO: Sign in with Facebook');
                 },
               ),
             ],

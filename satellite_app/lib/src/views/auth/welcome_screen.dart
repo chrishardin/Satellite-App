@@ -42,7 +42,7 @@ class WelcomeScreen extends StatelessWidget {
             TextButton(
               onPressed: () {
                 // navigate to the main part of the app as a guest
-                Navigator.pushNamed(context, '/home');
+                Navigator.pushNamed(context, '/main');
               },
               child: const Text('Continue as guest'),
             ),

@@ -28,6 +28,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  logging: ^1.0.3
   flutter:
     sdk: flutter
   flutter_signin_button: ^2.0.0
@@ -60,9 +61,21 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/achievements_placeholder.png 
+    - assets/error_placeholder.png 
+    - assets/galaxy_thumbnail_placeholder.png
+    - assets/galaxy_thumbnail_placeholder2.png
+    - assets/galaxy_thumbnail_placeholder3.png
+    - assets/landspace_placeholder.png
+    - assets/no_connection_placeholder.png
+    - assets/profile_placeholder.png
+    - assets/sat.png
+    - assets/sat_of_the_day_placeholder.png
+    - assets/space_station.png
+    - assets/spacecraft.png
+    - assets/telescope.png
+    - assets/weather.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
